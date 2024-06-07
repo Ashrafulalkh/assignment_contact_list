@@ -12,6 +12,7 @@ class ListCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.grey.shade200,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),
@@ -19,20 +20,20 @@ class ListCard extends StatelessWidget {
       child: ListTile(
         leading: const Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 15, 0),
-          child: Icon(Icons.contacts),
+          child: Icon(Icons.contacts_rounded),
         ),
         title: Text(
           contact.name,
           style: const TextStyle(
               color: Colors.deepOrange,
               fontSize: 18,
-              fontWeight: FontWeight.bold),
+              fontWeight: FontWeight.w600),
         ),
         subtitle: Text(
           contact.number,
           style: const TextStyle(fontSize: 15),
         ),
-        trailing: const Icon(Icons.call),
+        trailing: const Icon(Icons.call,color: Colors.blue,),
       ),
     );
   }

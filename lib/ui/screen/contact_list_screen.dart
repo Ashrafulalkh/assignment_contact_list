@@ -119,7 +119,7 @@ class _ContactListScreenState extends State<ContactListScreen> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: const Icon(Icons.cancel),
+              child: const Icon(Icons.no_sim_outlined),
             ),
             TextButton(
               onPressed: () {
@@ -127,7 +127,7 @@ class _ContactListScreenState extends State<ContactListScreen> {
                 Navigator.pop(context);
                 setState(() {});
               },
-              child: const Icon(Icons.delete),
+              child: const Icon(Icons.delete_outlined),
             ),
           ],
         );
